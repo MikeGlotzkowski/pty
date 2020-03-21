@@ -6,7 +6,7 @@ from datetime import datetime
 from save import json_to_mongo
 
 # get top 25 posts from reddit and save to mongo db
-reddit_url = "https://www.reddit.com/r/all.json"
+reddit_url = "https://www.reddit.com/r/all/hot.json?limit=100"
 reddit_headers = {'User-agent' : 'sebis reddit bot 0.0.1'}
 r = requests.get(url = reddit_url, headers = reddit_headers)
 reddit_data = r.json()

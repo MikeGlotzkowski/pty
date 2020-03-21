@@ -1,2 +1,6 @@
 requests
 pymongo
+pandas
+xgboost
+sklearn
+numpy
