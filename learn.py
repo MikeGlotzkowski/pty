@@ -144,7 +144,7 @@ model.fit(train_X, train_y)
 
 model = XGBClassifier()
 kfold = KFold(n_splits=10)
-results = cross_val_score(model, train_X, train_y, cv=kfold)
+results = cross_val_score(model, train_X, train_y, cv=kfold, scoring="neg_mean_squared_error")
 
 print(results)
 
